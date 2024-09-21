@@ -1,9 +1,9 @@
 // JavaScriptファイル (app.js)
-const accordions = document.querySelectorAll(".list-item");
+const lists = document.querySelectorAll(".list");
 
-accordions.forEach(accordion => {
-	accordion.addEventListener("click",function (){
-		const content = accordion.querySelector(".list-content");
+lists.forEach(list => {
+	list.addEventListener("click",function (){
+		const content = list.querySelector(".list-content");
 	content.classList.toggle("active");
 
 	if (content.classList.contains("active")){
@@ -13,4 +13,3 @@ accordions.forEach(accordion => {
 	}
 	});
 });
-
