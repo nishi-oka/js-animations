@@ -1,5 +1,5 @@
 // JavaScriptファイル (app.js)
-const lists = document.querySelectorAll(".list");
+const lists = document.querySelectorAll(".list-item");
 
 lists.forEach(list => {
 	list.addEventListener("click",function (){
